@@ -18,18 +18,7 @@ module ControlUnit (
 
 // ADD YOUR CODE HERE
 // 추가 시작
-/*
-Control Unit (조합 회로)
-  - opcode / func 를 보고 datapath 제어 신호를 생성 (ADD, ADI, LHI, JMP, WWD)
-  - 그 외 명령어는 모든 제어 신호가 0 -> NOP(NO Operation)처럼 동작 (레지스터 변경 없이 PC+1)
-  inst | reg_write reg_dst alu_src alu_op lhi jump wwd
-  -----+---------------------------------------------
-  ADD  |     1        1       0     ADD    0   0    0
-  ADI  |     1        0       1     ADD    0   0    0
-  LHI  |     1        0       x      x     1   0    0
-  JMP  |     0        x       x      x     0   1    0
-  WWD  |     0        x       x      x     0   0    1
-*/
+// Control Unit truth table 은 보고서 참고
 always @(*) begin
     // 기본값: NOP
     reg_write = 1'b0;
