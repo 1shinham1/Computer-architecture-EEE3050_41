@@ -1,8 +1,10 @@
 .DS_Store
 bin/
 vcd/
+Term_Project1_Handout/
 *.docx
 *.pdf
 *.pptx
 *.png
 *.jpg
+*.vcd
